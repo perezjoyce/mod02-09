@@ -15,25 +15,20 @@ nav, #home, #about, #services, #projects, #contact, footer {
 
 nav {
 	background: lightyellow;
-	width: 200px;
+	width: 300px;
 	position: fixed;
 	height: 100%;
+	/* border: 1px solid black; */
 }
 
 main {
 	background: lightgray;
-	margin-left: 200px;
-	/*position: absolute;*/
+	margin-left: 300px;
 }
 
 #home {
 	height: 100vh; /*viewport height*/
 	background: skyblue;
-	/*border: 5px solid white;
-	text-align: center;
-	width: 40%; 
-	/*40% of its immediate container*/
-	/*padding: 40px;*/
 }
 
 .box {
@@ -47,16 +42,10 @@ main {
 	transform: translate(-50%, -50%);
 }
 
-/*.hero {
-	border: 5px solid white;
-	padding: 30px;
-}*/
-
 #about {
 	/*height: 100vh;*/
 	background: indianred;
 	min-height: 300px;
-}
 }
 
 #services {
@@ -67,36 +56,106 @@ main {
 }
 
 #projects {
-	height: 100vh;
+	/* height: 100vh; */
 	background: crimson;
+	min-height: 100px;
 }
 
 #contact {
-	height: 100vh;
+	/* height: 100vh; */
 	background: orange;
+	min-height: 300px;
+	box-sizing: content-box;	
 }
 
 footer {
 	background: green;
+	margin-left: 300px;
+	text-align: center;
 }
 
-ul > li {
-	list-style: none;
-	/*background: lightblue;*/
-	margin-bottom: 2px;
-	line-height: 48px;
+/* NAVIGATION *************** */
+
+.nav__logo {
+	width: 65%;
+	height: 20%;
+	box-sizing: content-box;
+	border: 1px solid black;
 	text-align: center;
+
+	position: relative;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+img[alt*="photo"] {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+.nav__logo + p {
+	text-align: center;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+.nav__menu {
+	width: 100%;
+	margin: 20% 0 0 0;
+	box-sizing: border-box;
+	border: 1px solid black;
+	text-align: center;
+
+	position: relative;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+ul {
+	padding: 10%;
+	text-align: center;
+	line-height: 3em;
+	list-style: none;
+	text-decoration: none;
+}
+	
+a:link {
 	text-decoration: none;
 }
 
-.logo {
-	position: absolute;
-	width: 140px;
-	height: 140px;
-	/*background: darkgrey;*/
-	margin: auto;
-	box-sizing: content-box;
+li:hover {
+	background: lightgray;
+	border-radius: 5px;
 }
+
+li:focus {
+	font-weight: 900;
+}
+
+.nav__websites {
+	width: 100%;
+	text-align: center;
+	border: 1px solid black;
+	box-sizing: border-box;
+
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+i {
+	padding: 4%;
+	color: royalblue;
+}
+
+.fab:hover {
+	color: lightgray;
+}
+/* *********************** */
 
 .column {
 	/*border: 1px solid black;*/
@@ -107,7 +166,7 @@ ul > li {
 	text-align: center;
 }
 
-img[alt*="Service"] {
+img[alt*="service"] {
 	/*border: 1px solid black;*/
 	/*width: 60px;
 	height: 60px;*/
@@ -117,37 +176,55 @@ img[alt*="Service"] {
 	max-height: 100%;
 }
 
-img[alt*="Service"] ~ p {
+img[alt*="service"] ~ p {
 	overflow: hidden;
+}
+
+#services h3 {
+	font-size: 0.8em;
 }
 
 .no-top-margin {
 	margin-top: 0;
 }
-/********************************/
 
-a:link {
-	text-decoration: none;
+
+.left {
+	width: 30%;
+	float: left;
+	margin: 0 9%;
+	border: 1px solid black;
 }
 
-li:hover {
-	background: lightgray;
+.right {
+	width: 30%;
+	float: left;
+	margin: 0 9%;
+	border: 1px solid black;
 }
 
-li:focus {
-	font-weight: 900;
+textarea, input {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 2%;
+	border: none;
+	border-radius: 5px;
 }
 
-img[alt*="photo"] {
-	max-width: 100%;
-	max-height: 100%;
-	border-radius: 50%
+textarea {
+	display: block;
 }
 
+.button {
+	width: 105%;
+	padding: 4% 2%;
+	background-color: #09c;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin-top: 10px;
+}
 
-ul {
-	position: absolute;
-	width: 20%;
-	top: 30vh;
-	transform: translate(5%, -50%);
+.left i {
+	margin: 10px;
 }
