@@ -1,10 +1,153 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
 .clear:after {
 	content: "";
 	clear: both;
 	display: block;
+}
+
+body {
+	margin: 0;
+}
+
+nav, #home, #about, #services, #projects, #contact, footer {
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+nav {
+	background: lightyellow;
+	width: 200px;
+	position: fixed;
+	height: 100%;
+}
+
+main {
+	background: lightgray;
+	margin-left: 200px;
+	/*position: absolute;*/
+}
+
+#home {
+	height: 100vh; /*viewport height*/
+	background: skyblue;
+	/*border: 5px solid white;
+	text-align: center;
+	width: 40%; 
+	/*40% of its immediate container*/
+	/*padding: 40px;*/
+}
+
+.box {
+	border: 5px solid white;
+	text-align: center;
+	width: 40%; 
+	padding: 40px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*.hero {
+	border: 5px solid white;
+	padding: 30px;
+}*/
+
+#about {
+	/*height: 100vh;*/
+	background: indianred;
+	min-height: 300px;
+}
+}
+
+#services {
+	color: white;
+	/*height: 100vh;*/
+	background: midnightblue;
+	min-height: 300px;
+}
+
+#projects {
+	height: 100vh;
+	background: crimson;
+}
+
+#contact {
+	height: 100vh;
+	background: orange;
+}
+
+footer {
+	background: green;
+}
+
+ul > li {
+	list-style: none;
+	/*background: lightblue;*/
+	margin-bottom: 2px;
+	line-height: 48px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.logo {
+	position: absolute;
+	width: 140px;
+	height: 140px;
+	/*background: darkgrey;*/
+	margin: auto;
+	box-sizing: content-box;
+}
+
+.column {
+	/*border: 1px solid black;*/
+	box-sizing: border-box;
+	width: 31%;
+	margin-left: 1.16%;
+	float: left;
+	text-align: center;
+}
+
+img[alt*="Service"] {
+	/*border: 1px solid black;*/
+	/*width: 60px;
+	height: 60px;*/
+	display: block;
+	float: left;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+img[alt*="Service"] ~ p {
+	overflow: hidden;
+}
+
+.no-top-margin {
+	margin-top: 0;
+}
+/********************************/
+
+a:link {
+	text-decoration: none;
+}
+
+li:hover {
+	background: lightgray;
+}
+
+li:focus {
+	font-weight: 900;
+}
+
+img[alt*="photo"] {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 50%
+}
+
+
+ul {
+	position: absolute;
+	width: 20%;
+	top: 30vh;
+	transform: translate(5%, -50%);
 }
