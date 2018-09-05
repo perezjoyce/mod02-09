@@ -155,7 +155,7 @@ i {
 .fab:hover {
 	color: lightgray;
 }
-/* *********************** */
+/* CONTACT*********************** */
 
 .column {
 	/*border: 1px solid black;*/
@@ -227,4 +227,30 @@ textarea {
 
 .left i {
 	margin: 10px;
+}
+
+/* PROJECTS****************** */
+
+.projects__sample {
+	width: 100%;
+	border: 1px solid black;
+}
+.projects__sample > div {
+	margin: 10px;
+	padding: 0;
+	width: 25%;
+	border: 1px solid black;
+	float: left;
+	box-sizing: border-box;
+}
+
+.projects__sample img {
+	margin: 0 auto;
+	padding: 0;
+	height: 43vh;
+	width: 32vh;
+	min-height: 100px;
+	min-width: 80px;
+	border-radius: 5px;
+	border: 1px solid black;
 }
