@@ -11,9 +11,9 @@
 <body>
 
 	<nav>
-		<div class="nav__logo"><img src="assets/images/me.jpg" alt="photo"></div>
+		<div class="nav nav__logo"><img src="assets/images/me.jpg" alt="photo"></div>
 		<p>Hi, I'm Joyce! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sapiente dignissimos magni hi!</p>
-		<div class="nav__menu">
+		<div class="nav nav__menu">
 			<ul>
 				<li><a href="#home">HOME</a></li>
 				<li><a href="#about">ABOUT</a></li>
@@ -22,7 +22,7 @@
 				<li><a href="#contact">CONTACT</a></li>
 			</ul>
 		</div>
-		<div class="nav__websites">
+		<div class="nav nav__websites">
 			<i class="fab fa-facebook-square fa-2x"></i>
 			<i class="fab fa-instagram fa-2x"></i>
 			<i class="fab fa-twitter fa-2x"></i>
@@ -126,30 +126,34 @@
 
 		<section id="contact">
 			<h2>Contact</h2>
-			<form>
+			<form class="clear">
 
-				<div class="left">
+				<div class="contact__left">
 					<div>
 						<label for="name">Name:</label>
-						<input type="text" required>
+						<input type="text" class="text" required>
 					</div>						
 					<div>
 						<label for="email">Email:</label>
-						<input type="email" required>
+						<input type="email" class="email" required>
 					</div>
 					<div>
 						<label for="number">Contact Number:</label>
-						<input type="number">
+						<input type="number" class="number">
 					</div>
 				</div> 
 
-				<div class="right">
+				<div class="contact__right">
 					<div>
 						<label>Message:</label>
-						<textarea name="message" rows="5" id="message" placeholder="Write your message here..."></textarea>
+						<textarea name="message" class="message" rows="5" id="message" placeholder="Write your message here..."></textarea>
 					</div>
-					<div>
-						<input type="button" class="button" value="Send">
+					<div class="btn">
+						<label class="upload">
+							<input type="file" id="upload-btn">
+							<span id="btn__orange">Upload file</span>
+						</label>
+						<input type="button" id="btn__blue" value="Send">
 					</div>
 				</div>
 			</form>

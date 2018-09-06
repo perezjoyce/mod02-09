@@ -76,17 +76,15 @@ footer {
 
 /* NAVIGATION *************** */
 
-.nav__logo {
-	width: 65%;
-	height: 20%;
-	box-sizing: content-box;
-	border: 1px solid black;
-	text-align: center;
+.nav {
+	display: block;
+}
 
-	position: relative;
-	top: 10%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.nav__logo {
+	width: 62%;
+	height: 20%;
+	margin: 0 auto;
+	border: 1px solid black;
 }
 
 img[alt*="photo"] {
@@ -98,29 +96,22 @@ img[alt*="photo"] {
 
 .nav__logo + p {
 	text-align: center;
+	width: 100%;
 	border: 1px solid black;
-	box-sizing: border-box;
 }
 
 .nav__menu {
 	width: 100%;
-	margin: 20% 0 0 0;
-	box-sizing: border-box;
 	border: 1px solid black;
-	text-align: center;
-
-	position: relative;
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 ul {
-	padding: 10%;
-	text-align: center;
-	line-height: 3em;
 	list-style: none;
 	text-decoration: none;
+	text-align: center;
+	padding: 10%;
+	line-height: 3em;
+	border: 1px solid red;
 }
 	
 a:link {
@@ -137,25 +128,21 @@ li:focus {
 }
 
 .nav__websites {
+	margin-top: 20px;
 	width: 100%;
-	text-align: center;
 	border: 1px solid black;
-	box-sizing: border-box;
-
-	position: relative;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	
 }
 i {
-	padding: 4%;
+	padding: 5%;
+	display: inline;
 	color: royalblue;
+	border: 1px solid red;
 }
 
 .fab:hover {
-	color: lightgray;
+	color: rgb(92, 87, 87);
 }
-/* CONTACT*********************** */
+/* SERVICES*********************** */
 
 .column {
 	/*border: 1px solid black;*/
@@ -188,41 +175,70 @@ img[alt*="service"] ~ p {
 	margin-top: 0;
 }
 
+/* CONTACT*********************** */
 
-.left {
-	width: 30%;
+.contact__left {
+	width: 40%;
 	float: left;
-	margin: 0 9%;
+	margin-right: 10%;
 	border: 1px solid black;
 }
 
-.right {
-	width: 30%;
+.contact__right {
+	width: 40%;
 	float: left;
-	margin: 0 9%;
 	border: 1px solid black;
 }
 
-textarea, input {
+textarea, input[class="text"], input[class="email"], input[class="number"], input[class="message"] {
 	width: 100%;
-	margin-bottom: 10px;
 	padding: 2%;
 	border: none;
 	border-radius: 5px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
 }
 
 textarea {
 	display: block;
 }
 
-.button {
-	width: 105%;
-	padding: 4% 2%;
+.btn input {
+	padding: 2%;
+	margin-right: 10px;
+	border: none;
+	border-radius: 5px;
+	border: 1px solid red;
+	box-sizing: content-box;
+}
+
+#btn__blue {
 	background-color: #09c;
+}
+
+#upload-btn {
+	display: none;
+}
+
+label[class="upload"] {
+	background: orangered;
+}
+
+#btn__blue, label[class="upload"] {
+	width: 42%;
+	margin: 5px;
+	padding: 2.5%;
+	display: inline-block;
+	text-align: center;
+	font-size: 0.8em;
+	font-family: Arial, Helvetica, sans-serif;
 	color: #fff;
 	border: none;
 	border-radius: 5px;
-	margin-top: 10px;
+}
+
+label[class="upload"]:hover, #btn__blue:hover {
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .left i {
@@ -236,21 +252,19 @@ textarea {
 	border: 1px solid black;
 }
 .projects__sample > div {
-	margin: 10px;
-	padding: 0;
-	width: 25%;
+	display: inline;
 	border: 1px solid black;
-	float: left;
-	box-sizing: border-box;
 }
 
 .projects__sample img {
-	margin: 0 auto;
-	padding: 0;
 	height: 43vh;
 	width: 32vh;
-	min-height: 100px;
-	min-width: 80px;
+	min-width: auto;
+	min-height: auto;
 	border-radius: 5px;
-	border: 1px solid black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projects__sample img:hover {
+	opacity: 0.3;
 }
