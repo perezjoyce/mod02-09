@@ -100,6 +100,7 @@ img[alt*="photo"] {
 }
 
 .nav__logo + p {
+	margin-top: 15%;
 	text-align: center;
 	width: 100%;
 	/*border: 1px solid black;*/
@@ -126,9 +127,6 @@ a:link {
 li:hover {
 	background: lightgray;
 	border-radius: 5px;
-}
-
-li:focus {
 	font-weight: 900;
 }
 
@@ -194,17 +192,18 @@ img[alt*="service"]:hover {
 .contact__left {
 	width: 40%;
 	float: left;
-	margin-right: 10%;
+	margin-left: 5%;
 /*	border: 1px solid black;*/
 }
 
 .contact__right {
 	width: 40%;
+	margin-left: 5%;
 	float: left;
-/*	border: 1px solid black;*/
+	/* border: 1px solid black; */
 }
 
-textarea, input[class="text"], input[class="email"], input[class="number"], input[class="message"] {
+textarea, input[class="name"], input[class="email"], input[class="tel"], input[class="message"] {
 	width: 100%;
 	padding: 2%;
 	border: none;
@@ -219,7 +218,7 @@ textarea {
 
 .btn input {
 	padding: 2%;
-	margin-right: 10px;
+	margin-left: 1%;
 	border: none;
 	border-radius: 5px;
 /*	border: 1px solid red;*/
@@ -240,7 +239,6 @@ label[class="upload"] {
 
 #btn__blue, label[class="upload"] {
 	min-width: 100px;
-	margin: auto;
 	padding: 2.5%;
 	display: inline-block;
 	text-align: center;
@@ -255,9 +253,9 @@ label[class="upload"]:hover, #btn__blue:hover {
 	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-.left i {
+/* .left i {
 	margin: 10px;
-}
+} */
 
 /* PROJECTS****************** */
 
